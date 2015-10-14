@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D19A29C9D1ECA3A866097D0 /* Pods_BrightTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1C551C8815DA094A84BA78 /* Pods_BrightTester.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D088A6501BC9684B00A7666E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D088A64F1BC9684B00A7666E /* AppDelegate.swift */; };
 		D088A6521BC9684B00A7666E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D088A6511BC9684B00A7666E /* ViewController.swift */; };
 		D088A6551BC9684B00A7666E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D088A6531BC9684B00A7666E /* Main.storyboard */; };
 		D088A6571BC9684B00A7666E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D088A6561BC9684B00A7666E /* Assets.xcassets */; };
 		D088A65A1BC9684B00A7666E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D088A6581BC9684B00A7666E /* LaunchScreen.storyboard */; };
+		D088A6651BCA447F00A7666E /* GoogleAutoComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D088A6641BCA447F00A7666E /* GoogleAutoComplete.swift */; settings = {ASSET_TAGS = (); }; };
+		D0A545FF1BCEB84500BAD31B /* api.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0A545FE1BCEB84500BAD31B /* api.plist */; settings = {ASSET_TAGS = (); }; };
+		D0C8D9841BCA6A1400A44BA8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C8D9831BCA6A1400A44BA8 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075EE9B450A2546434D12730 /* Pods-BrightTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightTester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrightTester/Pods-BrightTester.debug.xcconfig"; sourceTree = "<group>"; };
+		5C1C551C8815DA094A84BA78 /* Pods_BrightTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrightTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2C977B9BF13D131F7DD32C /* Pods-BrightTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightTester.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrightTester/Pods-BrightTester.release.xcconfig"; sourceTree = "<group>"; };
 		D088A64C1BC9684B00A7666E /* BrightTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrightTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D088A64F1BC9684B00A7666E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D088A6511BC9684B00A7666E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,10 @@
 		D088A6561BC9684B00A7666E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D088A6591BC9684B00A7666E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D088A65B1BC9684B00A7666E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D088A6641BCA447F00A7666E /* GoogleAutoComplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleAutoComplete.swift; path = Utilities/URLSessions/GoogleAutoComplete.swift; sourceTree = "<group>"; };
+		D0A545FE1BCEB84500BAD31B /* api.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = api.plist; sourceTree = "<group>"; };
+		D0C8D9821BCA54F100A44BA8 /* BrightTester-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrightTester-Bridging-Header.h"; sourceTree = "<group>"; };
+		D0C8D9831BCA6A1400A44BA8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C8D9841BCA6A1400A44BA8 /* CoreData.framework in Frameworks */,
+				7D19A29C9D1ECA3A866097D0 /* Pods_BrightTester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54B5129AE93E405D98367DBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				075EE9B450A2546434D12730 /* Pods-BrightTester.debug.xcconfig */,
+				7F2C977B9BF13D131F7DD32C /* Pods-BrightTester.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		971513BB10820F0C3BBB5EF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0C8D9831BCA6A1400A44BA8 /* CoreData.framework */,
+				5C1C551C8815DA094A84BA78 /* Pods_BrightTester.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D088A6431BC9684B00A7666E = {
 			isa = PBXGroup;
 			children = (
+				D0C8D9821BCA54F100A44BA8 /* BrightTester-Bridging-Header.h */,
 				D088A64E1BC9684B00A7666E /* BrightTester */,
 				D088A64D1BC9684B00A7666E /* Products */,
+				54B5129AE93E405D98367DBB /* Pods */,
+				971513BB10820F0C3BBB5EF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +88,40 @@
 		D088A64E1BC9684B00A7666E /* BrightTester */ = {
 			isa = PBXGroup;
 			children = (
-				D088A64F1BC9684B00A7666E /* AppDelegate.swift */,
+				D088A6621BCA435100A7666E /* Utilities */,
+				D088A6611BCA431200A7666E /* Startup */,
 				D088A6511BC9684B00A7666E /* ViewController.swift */,
 				D088A6531BC9684B00A7666E /* Main.storyboard */,
 				D088A6561BC9684B00A7666E /* Assets.xcassets */,
 				D088A6581BC9684B00A7666E /* LaunchScreen.storyboard */,
-				D088A65B1BC9684B00A7666E /* Info.plist */,
 			);
 			path = BrightTester;
+			sourceTree = "<group>";
+		};
+		D088A6611BCA431200A7666E /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				D088A65B1BC9684B00A7666E /* Info.plist */,
+				D088A64F1BC9684B00A7666E /* AppDelegate.swift */,
+				D0A545FE1BCEB84500BAD31B /* api.plist */,
+			);
+			name = Startup;
+			sourceTree = "<group>";
+		};
+		D088A6621BCA435100A7666E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D088A6631BCA438600A7666E /* URLSessions */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D088A6631BCA438600A7666E /* URLSessions */ = {
+			isa = PBXGroup;
+			children = (
+				D088A6641BCA447F00A7666E /* GoogleAutoComplete.swift */,
+			);
+			name = URLSessions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D088A65E1BC9684B00A7666E /* Build configuration list for PBXNativeTarget "BrightTester" */;
 			buildPhases = (
+				F0D9B6E7D183437417481AD7 /* Check Pods Manifest.lock */,
 				D088A6481BC9684B00A7666E /* Sources */,
 				D088A6491BC9684B00A7666E /* Frameworks */,
 				D088A64A1BC9684B00A7666E /* Resources */,
+				3E8F872C93353D6B54E7EE6B /* Embed Pods Frameworks */,
+				160E758F8DDD977CC47B70FD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D088A65A1BC9684B00A7666E /* LaunchScreen.storyboard in Resources */,
+				D0A545FF1BCEB84500BAD31B /* api.plist in Resources */,
 				D088A6571BC9684B00A7666E /* Assets.xcassets in Resources */,
 				D088A6551BC9684B00A7666E /* Main.storyboard in Resources */,
 			);
@@ -129,11 +193,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		160E758F8DDD977CC47B70FD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrightTester/Pods-BrightTester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E8F872C93353D6B54E7EE6B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrightTester/Pods-BrightTester-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D9B6E7D183437417481AD7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D088A6481BC9684B00A7666E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D088A6651BCA447F00A7666E /* GoogleAutoComplete.swift in Sources */,
 				D088A6521BC9684B00A7666E /* ViewController.swift in Sources */,
 				D088A6501BC9684B00A7666E /* AppDelegate.swift in Sources */,
 			);
@@ -246,23 +359,99 @@
 		};
 		D088A65F1BC9684B00A7666E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075EE9B450A2546434D12730 /* Pods-BrightTester.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BrightTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreBluetooth\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brightgreenstar.BrightTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrightTester-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		D088A6601BC9684B00A7666E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2C977B9BF13D131F7DD32C /* Pods-BrightTester.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BrightTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreBluetooth\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brightgreenstar.BrightTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrightTester-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -285,6 +474,7 @@
 				D088A6601BC9684B00A7666E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
