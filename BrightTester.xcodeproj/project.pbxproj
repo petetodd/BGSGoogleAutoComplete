@@ -14,6 +14,8 @@
 		D088A6571BC9684B00A7666E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D088A6561BC9684B00A7666E /* Assets.xcassets */; };
 		D088A65A1BC9684B00A7666E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D088A6581BC9684B00A7666E /* LaunchScreen.storyboard */; };
 		D088A6651BCA447F00A7666E /* GoogleAutoComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D088A6641BCA447F00A7666E /* GoogleAutoComplete.swift */; settings = {ASSET_TAGS = (); }; };
+		D0A4FB7C1BCF8DC0004E3D31 /* BGSAddressTVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4FB7B1BCF8DC0004E3D31 /* BGSAddressTVDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		D0A4FB7E1BD0103C004E3D31 /* BGSGoogleAddressCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4FB7D1BD0103C004E3D31 /* BGSGoogleAddressCellTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D0A545FF1BCEB84500BAD31B /* api.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0A545FE1BCEB84500BAD31B /* api.plist */; settings = {ASSET_TAGS = (); }; };
 		D0C8D9841BCA6A1400A44BA8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C8D9831BCA6A1400A44BA8 /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,8 @@
 		D088A6591BC9684B00A7666E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D088A65B1BC9684B00A7666E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D088A6641BCA447F00A7666E /* GoogleAutoComplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleAutoComplete.swift; path = Utilities/URLSessions/GoogleAutoComplete.swift; sourceTree = "<group>"; };
+		D0A4FB7B1BCF8DC0004E3D31 /* BGSAddressTVDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGSAddressTVDataSource.swift; sourceTree = "<group>"; };
+		D0A4FB7D1BD0103C004E3D31 /* BGSGoogleAddressCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGSGoogleAddressCellTableViewCell.swift; sourceTree = "<group>"; };
 		D0A545FE1BCEB84500BAD31B /* api.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = api.plist; sourceTree = "<group>"; };
 		D0C8D9821BCA54F100A44BA8 /* BrightTester-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrightTester-Bridging-Header.h"; sourceTree = "<group>"; };
 		D0C8D9831BCA6A1400A44BA8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -94,6 +98,8 @@
 				D088A6531BC9684B00A7666E /* Main.storyboard */,
 				D088A6561BC9684B00A7666E /* Assets.xcassets */,
 				D088A6581BC9684B00A7666E /* LaunchScreen.storyboard */,
+				D0A4FB7B1BCF8DC0004E3D31 /* BGSAddressTVDataSource.swift */,
+				D0A4FB7D1BD0103C004E3D31 /* BGSGoogleAddressCellTableViewCell.swift */,
 			);
 			path = BrightTester;
 			sourceTree = "<group>";
@@ -248,6 +254,8 @@
 			files = (
 				D088A6651BCA447F00A7666E /* GoogleAutoComplete.swift in Sources */,
 				D088A6521BC9684B00A7666E /* ViewController.swift in Sources */,
+				D0A4FB7E1BD0103C004E3D31 /* BGSGoogleAddressCellTableViewCell.swift in Sources */,
+				D0A4FB7C1BCF8DC0004E3D31 /* BGSAddressTVDataSource.swift in Sources */,
 				D088A6501BC9684B00A7666E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

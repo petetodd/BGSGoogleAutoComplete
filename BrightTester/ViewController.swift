@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, BGSGoogleAutoCompleteProtocol {
+class ViewController: UIViewController, UITextFieldDelegate, BGSGoogleAutoCompleteProtocol, UITableViewDelegate {
 
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var textView: UITextView!
     
+    @IBOutlet weak var tableView: UITableView!
     var activeTextField: UITextField!
     
     
@@ -104,6 +105,11 @@ class ViewController: UIViewController, UITextFieldDelegate, BGSGoogleAutoComple
                 //     print("Result \(result.attributedFullText) with placeID \(result.placeID)")
             }
         }
+        
+        let dataSource:BGSAddressTVDataSource = (self.tableView?.dataSource as? BGSAddressTVDataSource)!
+        dataSource.arrayOfData = arrayAddressResults
+        tableView.reloadData()
+
 
             
     }
